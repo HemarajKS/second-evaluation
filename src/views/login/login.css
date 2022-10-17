@@ -1,0 +1,17 @@
+.login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer {
+    background-image: var(--background);
+    display: flex;
+    border-radius: 1em;
+    flex:100%
+}
+
+.loginLogoContainer{
+    flex-basis:10%
+}
