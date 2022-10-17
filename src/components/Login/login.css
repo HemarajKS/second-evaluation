@@ -11,6 +11,7 @@
     text-align: center;
     font-weight: 500;
     margin-bottom: 36px;
+    margin-top: 33px;
 }
 
 .inputContainer {
@@ -37,6 +38,7 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: 22px;
+    font-weight: 600;
 }
 
 .input:-ms-input-placeholder {
@@ -44,6 +46,7 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: 22px;
+    font-weight: 600;
 }
 
 .input::placeholder {
@@ -51,6 +54,7 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: 22px;
+    font-weight: 600;
 }
 
 .forgotPassword {
@@ -94,5 +98,11 @@
     position: absolute;
     top: 22px;
     right: 14px;
+    cursor: pointer;
+}
+
+.signUpLink a {
+    color: var(--fontClr);
+    text-decoration: none;
     cursor: pointer;
 }

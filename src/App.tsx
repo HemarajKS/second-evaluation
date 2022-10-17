@@ -1,13 +1,15 @@
-import "./style.css";
-import LandingPage from "./views/landingPage/landingPage";
-
+import './style.css'
+import LandingPage from './views/landingPage/landingPage'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <LandingPage/>
+      <BrowserRouter>
+        <LandingPage />
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

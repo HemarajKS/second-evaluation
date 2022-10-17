@@ -11,6 +11,7 @@
 
 body {
     min-height: 100vh;
+    background-color: #f5f7fb;
 }
 
 :root {
@@ -19,4 +20,9 @@ body {
     --fontClr: #ffffff;
     --placeHolderTextClr: #787e8c;
     --blueClr: #0e85ff;
+}
+
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+    display: none;
 }
