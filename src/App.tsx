@@ -1,11 +1,11 @@
 import "./style.css";
-import Login from "./views/login/login";
+import LandingPage from "./views/landingPage/landingPage";
 
 
 function App() {
   return (
     <div className="App">
-      <Login/>
+      <LandingPage/>
     </div>
   );
 }

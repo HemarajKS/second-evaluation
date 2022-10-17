@@ -2,17 +2,7 @@ import "./login.css"
 
 const Login = () => {
   return (
-    <div className="login">
-     <div className="loginContainer">
-      <div className="loginLogoContainer">
-        <div className="loginLogo">
-          <img src={require("../../assets/images/logo.png")} alt="Login Logo" />
-        </div>
-        <div className="loginLogoBody">
-          Protect & Manage every password in your business
-        </div>
-      </div>
-      <div className="loginForm">
+    <div className="loginPage">
         <div className="loginFormTitle">
           SIGN IN TO YOUR ACCOUNT
         </div>
@@ -31,8 +21,6 @@ const Login = () => {
         <div className="signUpLink">
           Don’t have a Account? SIGNUP
         </div>
-      </div>
-     </div>
     </div>
   )
 }
