@@ -8,8 +8,13 @@ const Login = () => {
         </div>
         <div className="loginFormBody">
           <form >
-            <input type="text" className="input" />
-            <input type="password" className="input" />
+            <div className="inputContainer">
+                 <input type="text" className="input" placeholder="Mobile Number" />
+                 <div className="loginPW">
+                  <input type="password" className="input" placeholder="MPin" />
+                  <img src={require("../../assets/icons/eye_on.png")} alt="Password Eye" className="eyeIcon" />
+                </div>
+            </div>
             <div className="forgotPassword">
               <div>Forgot your password?</div>
             </div>
@@ -19,7 +24,8 @@ const Login = () => {
           </form>
         </div>
         <div className="signUpLink">
-          Don’t have a Account? SIGNUP
+          <div> Don’t have a Account? SIGNUP</div>
+         
         </div>
     </div>
   )

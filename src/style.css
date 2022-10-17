@@ -17,4 +17,6 @@ body {
     --background: linear-gradient(180deg, #20bbff 0%, #0e85ff 100%);
     --borderClr: #f5f7fb4f;
     --fontClr: #ffffff;
+    --placeHolderTextClr: #787e8c;
+    --blueClr: #0e85ff;
 }
