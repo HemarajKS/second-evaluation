@@ -3,7 +3,9 @@ import '../../components/signUp/signUp.css'
 import { useState } from 'react'
 
 const SignUp = () => {
+  type usersType = { mobileNo: number; mPin: number }
   const [togglePass, setTogglePass] = useState(false)
+  let flag = false
 
   const togglePassword = () => {
     setTogglePass(!togglePass)
@@ -11,10 +13,20 @@ const SignUp = () => {
 
   const signUpHandler = (e: any) => {
     e.preventDefault()
+
     const mobileNo: number = e.target.mobileNo.value
     const newMPin: number = e.target.newMPin.value
     const confirmMpin: number = e.target.confirmMPin.value
-    console.log({ mobileNo, newMPin, confirmMpin })
+
+    const previousData: usersType[] = JSON.parse(
+      localStorage.getItem('users') || '[]',
+    )
+
+    for (let i = 0; i < previousData.length; i++) {
+      if (previousData[i].mobileNo === mobileNo) {
+        flag = true
+      }
+    }
   }
 
   return (
