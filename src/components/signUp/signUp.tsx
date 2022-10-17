@@ -5,7 +5,6 @@ import { useState } from 'react'
 const SignUp = () => {
   type usersType = { mobileNo: number; mPin: number }
   const [togglePass, setTogglePass] = useState(false)
-  let flag = false
 
   const togglePassword = () => {
     setTogglePass(!togglePass)
@@ -18,13 +17,15 @@ const SignUp = () => {
     const newMPin: number = e.target.newMPin.value
     const confirmMpin: number = e.target.confirmMPin.value
 
+    const userData = { mobileNo, newMPin }
+
     const previousData: usersType[] = JSON.parse(
       localStorage.getItem('users') || '[]',
     )
 
     for (let i = 0; i < previousData.length; i++) {
       if (previousData[i].mobileNo === mobileNo) {
-        flag = true
+      } else {
       }
     }
   }
@@ -43,7 +44,7 @@ const SignUp = () => {
             />
             <div className="loginPW">
               <input
-                type={togglePass ? 'text' : 'password'}
+                type="text"
                 className="input"
                 placeholder="Enter 4 Digit MPin"
                 minLength={4}
