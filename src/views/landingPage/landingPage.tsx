@@ -20,7 +20,7 @@ const LandingPage = () => {
         </div>
         <div className="loginForm">
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/signUp" element={<SignUp />} />
           </Routes>
         </div>
